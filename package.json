@@ -4,9 +4,9 @@
   "version": "1.0.0",
   "scripts": {
     "dev": "env-cmd -f .env.development rsbuild dev --open",
-    "build:dev": "rm -rf build && env-cmd -f .env.development rsbuild build",
-    "build:staging": "rm -rf build && env-cmd -f .env.staging rsbuild build",
-    "build:production": "rm -rf build && env-cmd -f .env.production rsbuild build"
+    "build:dev": "env-cmd -f .env.development rsbuild build",
+    "build:staging": "env-cmd -f .env.staging rsbuild build",
+    "build:production": "env-cmd -f .env.production rsbuild build"
   },
   "dependencies": {
     "react": "17.0.2",
@@ -15,7 +15,7 @@
   "devDependencies": {
     "@rsbuild/core": "^0.2.3",
     "@rsbuild/plugin-react": "^0.2.3",
-    "@rsbuild/plugin-svgr": "0.2.3",
+    "@rsbuild/plugin-svgr": "^0.2.3",
     "env-cmd": "10.1.0"
   }
 }

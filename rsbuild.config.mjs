@@ -19,7 +19,8 @@ export default defineConfig({
   output: {
     distPath: {
       root: 'build'
-    }
+    },
+    cleanDistPath: true,
   },
   source: {
     alias: {
